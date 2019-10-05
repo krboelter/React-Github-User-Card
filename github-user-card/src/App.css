@@ -1,7 +1,35 @@
 body {
-  width: 50%;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.container {
+  background-color: rgb(192, 102, 0);
+  padding-top: 15px;
 }
 
 .card {
-  border: 2px solid red;
+  border: 3px solid black;
+  margin: 20px;
+  width: 40%;
+  padding: 15px;
+  background-color: gray;
+  box-shadow: 5px 5px 10px black;
+}
+
+img {
+  max-width: 150px;
+  max-height: 150px;
+  box-shadow: 0 0 10px black;
+}
+
+.class-list-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+h2 {
+  border-bottom: 3px solid black;
+  text-shadow: 2px 2px 0px rgb(130, 0, 182);
 }

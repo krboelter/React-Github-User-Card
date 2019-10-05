@@ -32,16 +32,13 @@ class App extends React.Component {
       .catch(err => console.log(err, "There was an error..."))
   }
 
-  handleConsole = () => {
-    console.log(this.state.userData)
-  }
-
   render() {
     return (
       <div className="container">
         <Card user={this.state.personalData.login} url={this.state.personalData.avatar_url} />
-        <CardList user={this.state.userData} />
-        <button onClick={this.handleConsole}>Show in Console</button>
+        <div>
+          <CardList user={this.state.userData} />
+        </div>
       </div>
     )
   }
